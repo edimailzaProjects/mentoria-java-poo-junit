@@ -6,6 +6,8 @@ public class Abelha extends Animal
     private boolean domestico = false;
     private String grupo = "Artrópodes";
     
+   //Também funciona sem override
+    
     public boolean isDomestico()
     {
         return domestico;

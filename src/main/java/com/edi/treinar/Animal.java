@@ -49,10 +49,20 @@ public class Animal
     {
         if (ameaca)
         {
-            return "Ataca em caso de ameaça";
+            return "Ataca " + this.mensagemAtaca();
         }
         else
-            return "Não ataca";
+            return "Não ataca " + this.mensagemNaoAtaca();
+    }
+
+    public String mensagemAtaca()
+    {
+        return "em caso de ameaça.";
+    }
+
+    public String mensagemNaoAtaca()
+    {
+        return "se não se sentir ameaçado.";
     }
 
 }

@@ -31,7 +31,7 @@ public class TestaLobo
     public void deveRetornarMata()
     {
         boolean ameaca = true;
-        String mata = "Mata em caso de ameaça";
+        String mata = "Mata em caso de ameaça.";
         Assertions.assertEquals(mata, lobo.ataca(ameaca));
     }
     
@@ -39,7 +39,7 @@ public class TestaLobo
     public void deveRetornarNaoMata()
     {
         boolean ameaca = false;
-        String mata = "Não mata se não se sentir ameaçado";
+        String mata = "Não mata se não se sentir ameaçado.";
         Assertions.assertEquals(mata, lobo.ataca(ameaca));
     }
     

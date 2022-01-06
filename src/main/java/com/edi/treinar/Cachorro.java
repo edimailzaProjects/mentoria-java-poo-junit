@@ -16,33 +16,39 @@ public class Cachorro extends Animal
         this.raca = raca;
     }
 
+    @Override
     public boolean isDomestico()
     {
         return domestico;
     }
 
+    @Override
     public void setDomestico(boolean domestico)
     {
         this.domestico = domestico;
     }
 
+    @Override
     public String getGrupo()
     {
         return grupo;
     }
 
+    @Override
     public void setGrupo(String grupo)
     {
         this.grupo = grupo;
     }
     
-    public String ataca(boolean ameaca)
+    //Sobrescarga
+    public String ataca(boolean ameaca, boolean ladrao)
     {
-        if (ameaca)
+        
+        if (ameaca && ladrao)
         {
-            return "Morde em caso de ameaça";
+            return "Morde " + super.mensagemAtaca();
         }
         else
-            return "Não morde se não se sentir ameaçado";
+            return "Não morde " + super.mensagemNaoAtaca();
     }
 }
